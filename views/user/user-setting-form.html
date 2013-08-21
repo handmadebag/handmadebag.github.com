@@ -1,0 +1,27 @@
+<div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+
+      <!-- Menu Setting -->
+      <div class="span3">
+        <ul class="nav nav-fills nav-stacked nav-header">
+          <li ng-repeat='link in links'>
+            <a ng-click='changeLink(link.id)'>
+              <i ng-class="{{link.iconClass}}"></i>{{link.text}}
+            </a>
+          </li>
+          <li><a href="#/user/setting/information"><i class="icon-pencil"></i> Profile</a></li>
+          <li><a href="#"><i class="icon-envelope"></i> Email</a></li>
+          <li><a href="#"><i class="icon-user"></i> Password</a></li>
+          <li><a href="#"><i class="icon-gift"></i> wishlist</a></li>
+          <li><a href="#"><i class="icon-plus"></i> Follow</a></li>
+          <li><a href="#"><i class="icon-heart"></i> Friend</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Contend -->
+      <div ng-include='currentLink.partial'class="span5">
+      </div>
+    </div>
+  </div>
+</div>

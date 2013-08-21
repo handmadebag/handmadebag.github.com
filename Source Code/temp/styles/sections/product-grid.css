@@ -1,0 +1,26 @@
+/* line 1, ../../../app/styles/sections/product-grid.scss */
+.well-gift {
+  padding: 5px 1px 3px 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 9, ../../../app/styles/sections/product-grid.scss */
+.product-thumbnails .product {
+  position: relative;
+}
+/* line 12, ../../../app/styles/sections/product-grid.scss */
+.product-thumbnails .wish-list-button {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+}
+/* line 21, ../../../app/styles/sections/product-grid.scss */
+.product-thumbnails .wish-list-button:hover {
+  color: red;
+}

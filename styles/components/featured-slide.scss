@@ -1,0 +1,8 @@
+.featured-slide {
+  & > .main-slide {
+    margin-left: 0px;
+  }
+  & > .right-slide .item{
+    margin-bottom: 11px;
+  }
+}

@@ -1,0 +1,6 @@
+/* line 1, ../../../app/styles/shared/global.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,36 @@
+.wishlist-navbar {
+  margin: 10px 0;
+  ul.nav > li {
+    margin-left: 10px
+  }
+  ul.dropdown-menu {
+    font-size: 12px;
+  }
+}
+.wishlist-wrapper {
+	position: relative;
+}
+
+.wishlist {
+  position: relative;
+}
+
+.wishlist-label {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.wishlist-label:hover {
+  color: white;
+}
+
+.wishlist-top-badge {
+  & > .user-info {
+    .user-avatar {
+      margin-right: 10px;
+    }
+  }
+}

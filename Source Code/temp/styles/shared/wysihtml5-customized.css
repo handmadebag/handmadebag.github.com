@@ -1,0 +1,10 @@
+/* line 2, ../../../app/styles/shared/wysihtml5-customized.scss */
+.wysihtml5-toolbar .btn {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+/* line 8, ../../../app/styles/shared/wysihtml5-customized.scss */
+.wysihtml5-sandbox {
+  width: 401px;
+}

@@ -1,0 +1,93 @@
+/* line 1, ../../../app/styles/sections/friends.scss */
+.friends {
+  overflow-x: scroll;
+  white-space: nowrap;
+  height: 180px;
+}
+
+/* line 6, ../../../app/styles/sections/friends.scss */
+.friends [class*="span"] {
+  display: inline-block;
+  float: none;
+  /* Very important */
+}
+
+/* line 11, ../../../app/styles/sections/friends.scss */
+.scroll-button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  float: right;
+}
+/* line 15, ../../../app/styles/sections/friends.scss */
+.scroll-button > #scrollLeft {
+  margin-left: -80px;
+  margin-top: -120px;
+}
+/* line 19, ../../../app/styles/sections/friends.scss */
+.scroll-button > #scrollRight {
+  margin-right: -80px;
+  margin-top: -120px;
+}
+
+/* line 26, ../../../app/styles/sections/friends.scss */
+.selected-friend {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+}
+
+/* line 36, ../../../app/styles/sections/friends.scss */
+.not-selected-friend {
+  display: none;
+}
+
+/* line 40, ../../../app/styles/sections/friends.scss */
+.friend {
+  position: relative;
+}
+
+/* line 44, ../../../app/styles/sections/friends.scss */
+.friends-control {
+  float: right;
+}
+
+/* line 48, ../../../app/styles/sections/friends.scss */
+.dropdown-menu label {
+  margin-left: 10px;
+}
+
+/* line 53, ../../../app/styles/sections/friends.scss */
+.product-filter-navbar .dropdown-menu {
+  min-width: 200px;
+}
+
+/* line 60, ../../../app/styles/sections/friends.scss */
+.product-thumbnails .product {
+  position: relative;
+}
+/* line 63, ../../../app/styles/sections/friends.scss */
+.product-thumbnails .add-to-friends-button {
+  text-decoration: none;
+  color: grey;
+  position: absolute;
+  display: none;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+}
+/* line 72, ../../../app/styles/sections/friends.scss */
+.product-thumbnails .remove-from-friend-button {
+  text-decoration: none;
+  color: grey;
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+/* line 81, ../../../app/styles/sections/friends.scss */
+.product-thumbnails .add-to-friends-button:hover {
+  color: #08C;
+}
