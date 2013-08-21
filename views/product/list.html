@@ -1,0 +1,129 @@
+<dl class='form product-search'>
+  <dt>
+  <label for='product_search' hint='please' name='product[name]'>Search</label>
+  </dt>
+  <dd>
+  <input id='product_search' hint='please' name='product[name]' type='text' size='30'/>
+  </dd>
+</dl>
+<table class='table
+  table-bordered table-hover'>
+  <thead>
+    <tr>
+      <th ng-repeat='header in getFilteredHeaders()'><a
+          ng-click='toggleSort($index)'>{{header.label}}</a></th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='product in products | orderBy:sortColumn:reverse'>
+      <td ng-repeat='val in getFilteredHeaders()' ng-bind-html-unsafe='product[val.name]'></td>
+      <td>
+        <a href="#add-product-modal" role="button" class="btn btn-mini" data-toggle="modal"
+        ng-click='editProduct(product)'><i class="icon-pencil"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Add product button -->
+<a href="#add-product-modal" role="button" class="btn" data-toggle="modal"
+  ng-click='createProduct()'
+  >Add</a>
+
+<dl class='form'>
+  <img id='image-dropzone' src="http://dnduploader.filkor.org/static/dropbox.png" alt="" />
+  <ul ui-sortable id='preview-images'>
+    <li ng-repeat='image in images'><a href=""><img src="{{image.url}}" alt="" /></a></li>
+  </ul>
+</dl>
+
+<div id="add-product-modal" ng-model='modalShown' class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="add-product-modal-label" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="add-product-modal-label">Add new product</h3>
+  </div>
+  <div class="modal-body">
+    <div class='fieldgroup'>
+      <form accept-charset='UTF-8' name='addProductForm'>
+        <div class='error'></div>
+          <input id='new-product-id' name='product[id]' type='hidden' ng-model='newProduct.id'/>
+        <dl class='form'>
+          <dt>
+          <label for='new-product-name' hint='please' name='product[name]'>Name</label>
+          </dt>
+          <dd>
+          <input id='new-product-name' autofocus hint='please'
+          name='product[name]' type='text' size='30' ng-maxlength="50"
+          ng-model='newProduct.name' required/>
+          </dd>
+          <dd class="error" ng-hide="validateProductName().isValidated">{{validateProductName().message}}</dd>
+        </dl>
+        <dl class='form'>
+          <dt>
+          <label for='new-product-sku' hint='please' name='product[sku]'>SKU</label>
+          </dt>
+          <dd>
+          <input id='new-product-sku' required hint='please' name='product[sku]'
+          type='text' size='30' ng-model='newProduct.sku'/>
+          </dd>
+        </dl>
+        <dl class='form'>
+          <dt>
+          <label for='new-product-manufacturer' hint='please' name='product[manufacturer]'>Manufacturer</label>
+          </dt>
+          <dd>
+          <input id='new-product-manufacturer' hint='please' name='product[manufacturer]'
+          type='text' size='30' ng-model='newProduct.manufacturer'/>
+          </dd>
+        </dl>
+        <dl class='form'>
+          <dt>
+          <label for='new-product-ean' hint='please' name='product[ean]'>EAN</label>
+          </dt>
+          <dd>
+          <input id='new-product-ean' hint='please' name='product[ean]'
+          type='text' size='30' ng-minlength="13" ng-maxlength="13" ng-model='newProduct.ean'/>
+          </dd>
+        </dl>
+        <dl class='form'>
+          <dt>
+          <label for='new-product-price' hint='please' name='product[price]'>Price</label>
+          </dt>
+          <dd>
+          <input id='new-product-price' required hint='please'
+          name='product[price]' type='text' size='30' ng-model='newProduct.price'/>
+          </dd>
+        </dl>
+        <dl class='form'>
+          <dt>
+            <label for='new-product-short-description' hint='please' name='product[short-description]'>Short Description</label>
+          </dt>
+          <dd>
+          <textarea id='new-product-short-description' required hint='please'
+            name='product[short-description]' type='text'
+            ng-model='newProduct.shortDescription'></textarea>
+          </dd>
+        </dl>
+        <dl class='form'>
+          <dt>
+            <label for='new-product-description' hint='please' name='product[description]'>Description</label>
+          </dt>
+          <dd>
+          <textarea id='new-product-description' required hint='please'
+            name='product[description]' type='text'
+            ng-model='newProduct.description'></textarea>
+          </dd>
+        </dl>
+      </form>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <button class="btn btn-primary" ng-show='currentAction.save' ng-click='saveProductAndClose()'>Save</button>
+    <button class="btn btn-primary" ng-show='currentAction.create' ng-click='addProductAndClose()'>Add</button>
+    <button class="btn btn-primary" ng-show='currentAction.create' ng-click='addProductAndStay()'>Add More</button>
+  </div>
+</div>

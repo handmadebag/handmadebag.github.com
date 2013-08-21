@@ -1,0 +1,35 @@
+#header-search {
+	#search-form {
+		margin-top: 5px;
+		margin-bottom: 0px;
+	}
+	#search-bar {
+		
+		position: relative;
+		margin-bottom: 0;
+		margin-right: 10px;
+		
+		#search-input {
+			margin-bottom: 0;
+			width: 245px;
+			padding-left: 30px;
+			box-sizing: content-box;
+		}
+
+		.icon.icon-search {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			font-size: 18px;
+			color: #AAA;
+		}
+	}
+}
+
+.affix {
+    position: fixed absolute; 
+    top: 0px; 
+  	z-index: 1;
+}
+
+

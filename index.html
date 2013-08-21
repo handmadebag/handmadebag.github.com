@@ -1,1 +1,99 @@
-test
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <link
+        href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css"
+        rel="stylesheet">
+        <link
+        href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css"
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css"/>
+    </head>
+    <body ng-app="giftPortalApp" ng-controller='MainController'>
+
+        <!--[if lt IE 7]>
+            <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome-ie7.css" rel="stylesheet">
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this sit
+
+        e.</p>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="scripts/vendor/es5-shim.min.js"></script>
+            <script src="scripts/vendor/json3.min.js"></script>
+        <![endif]-->
+
+
+        <!-- First Nav Bar -->
+        <div id='top-navigation' class="first-navbar navbar navbar-static-top"
+          ng-include='partials.sharedTopNavigation'></div>
+
+        <!-- Promotion -->
+        <div style="height: 400px; background-color: grey;"><div class="container"><img src="http://placehold.it/1170x400"/></div></div>
+
+        <!-- Second Nav Bar -->
+        <div id="affix-navigation" class="navbar navbar-static-top navbar-inverse" data-spy="affix" data-offset-top="441" ng-include='partials.sharedAffixNavigation'></div>
+
+        <div class="container app-content" ng-view>
+        </div>
+
+        <script
+          src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script
+          src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+        <script src="scripts/vendor/wysihtml5-0.3.0.min.js"></script>
+        <script src="scripts/vendor/bootstrap-wysihtml5-0.0.2.min.js"></script>
+        <script
+          src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+        <script
+          src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-resource.min.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/mgcrea/angular-strap/master/dist/angular-strap.js"></script>
+        <script src="scripts/vendor/angular-ui.min.js"></script>
+
+        <!-- modal -->
+         <script type="text/javascript" src="https://raw.github.com/mgcrea/angular-strap/master/dist/angular-strap.js"></script>
+
+        <!-- build:js scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+
+        <script src="scripts/controllers/user.js"></script>
+        <script src="scripts/controllers/product.js"></script>
+        <script src="scripts/controllers/wishlist.js"></script>
+        <script src="scripts/controllers/friend.js"></script>
+        <script src="scripts/controllers/wishlistDetails.js"></script>
+        <script src="scripts/controllers/userSetting.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+
+        <script src="scripts/services/product.js"></script>
+        <script src="scripts/services/partial.js"></script>
+        <script src="scripts/services/wishlist.js"></script>
+        <script src="scripts/services/friend.js"></script>
+        <script src="scripts/services/category.js"></script>
+
+        <script src="scripts/directives/tooltip.js"></script>
+        <script src="scripts/directives/infinite-scroll.js"></script>
+        <script src="scripts/directives/scroll-button.js"></script>
+        <script src="scripts/directives/show-hide-action.js"></script>
+        <script src="scripts/controllers/search.js"></script>
+        <script src="scripts/services/idea.js"></script>
+        <script src="scripts/services/user.js"></script>
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

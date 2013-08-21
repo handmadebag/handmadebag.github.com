@@ -1,0 +1,16 @@
+<div class='fieldgroup' ng-controller='UserSettingController'>
+  <dl class='form'>
+    <dt>
+    <label for='user_email' hint='please' name='user[email]'>Change email : </label>
+    </dt>
+    <dd>
+    <input id='user_email' hint='please' name='user[email]' type='email' size='30' ng-model='user.email'/>
+
+    <p class='note' ng-hide='userRegisterForm["user[email]"].$invalid'>We won't share your email</p>
+    </dd>
+    <dd class="error" ng-show='userRegisterForm["user[email]"].$error.email'>Email is invalid</dd>
+    <div class="form-actions">
+      <button type='button' class='btn btn-success' ng-click='saveUserInfo()'> Save email</button>
+    </div>
+  </dl>
+</div>
