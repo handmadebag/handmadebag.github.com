@@ -1,0 +1,6 @@
+/* line 1, ../../../app/styles/components/thumbnail.scss */
+.thumbnail:hover {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}

@@ -1,0 +1,41 @@
+/* line 1, ../../../app/styles/sections/wishlist.scss */
+.wishlist-navbar {
+  margin: 10px 0;
+}
+/* line 3, ../../../app/styles/sections/wishlist.scss */
+.wishlist-navbar ul.nav > li {
+  margin-left: 10px;
+}
+/* line 6, ../../../app/styles/sections/wishlist.scss */
+.wishlist-navbar ul.dropdown-menu {
+  font-size: 12px;
+}
+
+/* line 10, ../../../app/styles/sections/wishlist.scss */
+.wishlist-wrapper {
+  position: relative;
+}
+
+/* line 14, ../../../app/styles/sections/wishlist.scss */
+.wishlist {
+  position: relative;
+}
+
+/* line 18, ../../../app/styles/sections/wishlist.scss */
+.wishlist-label {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+/* line 26, ../../../app/styles/sections/wishlist.scss */
+.wishlist-label:hover {
+  color: white;
+}
+
+/* line 32, ../../../app/styles/sections/wishlist.scss */
+.wishlist-top-badge > .user-info .user-avatar {
+  margin-right: 10px;
+}

@@ -1,0 +1,78 @@
+/* line 1, ../../../app/styles/sections/product-list.scss */
+.product-search {
+  float: right;
+}
+/* line 6, ../../../app/styles/sections/product-list.scss */
+.product-search > dt {
+  float: left;
+}
+/* line 8, ../../../app/styles/sections/product-list.scss */
+.product-search > dt > label {
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+/* line 14, ../../../app/styles/sections/product-list.scss */
+.product-search > dd {
+  float: left;
+}
+
+/* line 19, ../../../app/styles/sections/product-list.scss */
+#new-product-description {
+  width: 401px;
+}
+
+/* line 23, ../../../app/styles/sections/product-list.scss */
+.product-grid {
+  min-height: 250px;
+}
+
+/* line 27, ../../../app/styles/sections/product-list.scss */
+#add-product-modal {
+  width: 614px;
+  height: 614px;
+}
+/* line 30, ../../../app/styles/sections/product-list.scss */
+#add-product-modal > .modal-footer {
+  #margin-top: 75px;
+}
+/* line 33, ../../../app/styles/sections/product-list.scss */
+#add-product-modal > .modal-body {
+  height: 475px;
+  max-height: 475px;
+}
+/* line 37, ../../../app/styles/sections/product-list.scss */
+#add-product-modal dd {
+  #margin-bottom: 5px;
+}
+/* line 40, ../../../app/styles/sections/product-list.scss */
+#add-product-modal dl.form {
+  margin: 0 0 5px 0;
+  clear: both;
+}
+/* line 43, ../../../app/styles/sections/product-list.scss */
+#add-product-modal dl.form > dd {
+  float: left;
+}
+/* line 45, ../../../app/styles/sections/product-list.scss */
+#add-product-modal dl.form > dd > input {
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-top-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-bottom-radius: 0px;
+}
+/* line 55, ../../../app/styles/sections/product-list.scss */
+#add-product-modal dl.form > dd.error {
+  border-left: none;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 3px;
+  border-top-color: #C0B536;
+  padding: 4px;
+}
+
+/* line 67, ../../../app/styles/sections/product-list.scss */
+#add-product-modal.modal.fade.in {
+  top: 40%;
+}

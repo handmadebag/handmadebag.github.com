@@ -1,0 +1,33 @@
+/* line 2, ../../../app/styles/sections/navigation.scss */
+#header-search #search-form {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+/* line 6, ../../../app/styles/sections/navigation.scss */
+#header-search #search-bar {
+  position: relative;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+/* line 12, ../../../app/styles/sections/navigation.scss */
+#header-search #search-bar #search-input {
+  margin-bottom: 0;
+  width: 245px;
+  padding-left: 30px;
+  box-sizing: content-box;
+}
+/* line 19, ../../../app/styles/sections/navigation.scss */
+#header-search #search-bar .icon.icon-search {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+  color: #AAA;
+}
+
+/* line 29, ../../../app/styles/sections/navigation.scss */
+.affix {
+  position: fixed absolute;
+  top: 0px;
+  z-index: 1;
+}
